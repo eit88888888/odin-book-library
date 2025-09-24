@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DAD7CD;
+    margin: 28px;
+}
+
+.grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+
+}
+
+.add-book-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 28px;
+    right: 28px;
+    width: 72px;
+    aspect-ratio: 1;
+    background-color: #344E41;
+    border-radius: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    background-color: #A3B18A;
+    border-radius: 16px; 
+    gap: 16px;
+}
+
+.card-header {
+    color: #344E41;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    height: 2.4em;
+}
+
+.card-info {
+display: flex;
+justify-content: space-between;
+color: #344E41;
+font-size: 16px;
+}
+
+.card-buttons {
+ display: flex;
+ gap: 4px;
+}
+
+.card-btn {
+    color: #DAD7CD;
+    padding: 8px 0;
+    font-size: 16px;
+    border: none;
+    flex: 1;
+    border-radius: 8px;
+}
+
+#change-status {
+    background-color: #588157;
+}
+
+#remove-card {
+    background-color: #3A5A40;
+}
