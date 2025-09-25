@@ -30,6 +30,55 @@ body {
     border-radius: 50%;
 }
 
+.form-add-book {
+    display: flex;
+    flex-direction: row;
+    background-color: #344E41;
+    padding: 24px;
+    border-radius: 16px;
+    color: #DAD7CD;
+}
+.form-add-book > form > h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.input-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-add-book form input {
+    background-color: #3A5A40;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+}
+
+.form-add-book form button {
+    background-color: #A3B18A;
+    color: #344E41;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 12px;
+}
+
+.form-add-book > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 16px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -42,7 +91,7 @@ body {
 .card-header {
     color: #344E41;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     height: 2.4em;
 }
