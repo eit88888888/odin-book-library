@@ -30,9 +30,8 @@ function addBookToLibrary(name, author, pages) {
 }
 
 const postMethods = () => {
+        postContainer.innerHTML = "";
         myLibrary.map((postData) => {
-            postContainer.innerHTML = "";
-            myLibrary.forEach(book => {
               const postElement = document.createElement('div');
             postElement.classList.add('card');
             postElement.innerHTML = `
@@ -47,7 +46,6 @@ const postMethods = () => {
             </div>
             `
             postContainer.appendChild(postElement);  
-            })
             
         })
     }
