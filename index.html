@@ -10,53 +10,57 @@
     <title>Book Library</title>
 </head>
 <body>
-    <main class="grid">
-        <div class="add-book-button">
-        <svg width="36" height="36" vi ewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <button id="add-book-button">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M16.9714 1.02857C16.9714 0.460507 17.4319 0 18 0C18.5681 0 19.0286 0.460507 19.0286 1.02857V34.9714C19.0286 35.5395 18.5681 36 18 36C17.4319 36 16.9714 35.5395 16.9714 34.9714V1.02857Z" fill="#D9D9D9"/>
 <path d="M34.9714 16.9714C35.5395 16.9714 36 17.4319 36 18C36 18.5681 35.5395 19.0286 34.9714 19.0286L1.02857 19.0286C0.460506 19.0286 -3.88449e-06 18.5681 -3.85966e-06 18C-3.83483e-06 17.4319 0.460506 16.9714 1.02857 16.9714L34.9714 16.9714Z" fill="#D9D9D9"/>
 </svg>
 
-        </div>
+        </button>
 
+    <dialog id="dialog">
             <div class="form-add-book">
-                <form action="">
-                    <h3>Add New Book</h3>
+                <form action="" method="dialog">
+                    <div class="header-esc">
+                        <h3>Add New Book</h3>
+                        <button id="add-book-esc-button"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.45501 25.4558C9.18722 25.7236 8.75305 25.7236 8.48527 25.4558C8.21748 25.188 8.21748 24.7538 8.48527 24.4861L24.4861 8.48524C24.7539 8.21745 25.188 8.21745 25.4558 8.48524C25.7236 8.75303 25.7236 9.1872 25.4558 9.45498L9.45501 25.4558Z" fill="#D9D9D9"/>
+<path d="M8.48533 9.45497C8.21754 9.18718 8.21754 8.75301 8.48533 8.48522C8.75312 8.21743 9.18729 8.21743 9.45508 8.48522L25.4559 24.486C25.7237 24.7538 25.7237 25.188 25.4559 25.4558C25.1881 25.7236 24.7539 25.7236 24.4861 25.4558L8.48533 9.45497Z" fill="#D9D9D9"/>
+</svg>
+</button>
+                    </div>
+                    
                     <div class="form-inputs">
 
                     <div class="input-item">
-                        <label for="name">Book Name</label>
-                        <input type="text" id="name" min="1" max="36" placeholder="The Diary of Samuel Pepys">
+                        <label for="name">Book Name</label>                        
+                        <input type="text" id="name" placeholder="The Diary of Samuel Pepys">
                     </div>
                     
                     <div class="input-item">
                         <label for="author">Author</label>
-                        <input type="text" id="author" min="1" max="24" placeholder="Samuel Pepys">
+                        <input type="text" id="author" placeholder="Samuel Pepys">
                     </div>
 
                     <div class="input-item">
                         <label for="pages">Amount of Pages</label>
-                        <input type="number" id="pages" min="1" max="5000" placeholder="55">
+                        <input type="number" id="pages" placeholder="55">
                     </div>
 
                     
                     </div>
 
-                    <button type="submit">Add</button>
+                    <button id="dialog-add-book" type="submit">Add</button>
                 </form>
             </div>
+        </dialog>
 
-        <!-- <div class="card">
-            <h2 class="card-header">The Diary of Samuel Pepys</h2>
-            <div class="card-info">
-                <p class="autor">by Samuel Pepys</p>
-                <p class="pages">233 pages</p>
-            </div>
-            <div class="card-buttons">
-                <button class="card-btn" id="change-status">Not Read</button>
-                <button class="card-btn" id="remove-card">Remove</button>
-            </div>
-        </div> -->
+    <main class="grid">
+        
+
+            
+            
         
         
     </main>

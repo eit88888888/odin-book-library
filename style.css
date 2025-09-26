@@ -17,30 +17,62 @@ body {
 
 }
 
-.add-book-button {
+#add-book-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 28px;
     right: 28px;
     width: 72px;
     aspect-ratio: 1;
     background-color: #344E41;
     border-radius: 50%;
+    border: none;
+}
+dialog {
+  position: fixed;
+  margin: auto;
+  border: none;
+  background: none;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(5px);
 }
 
 .form-add-book {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
     display: flex;
     flex-direction: row;
+    width: 350px;
     background-color: #344E41;
     padding: 24px;
     border-radius: 16px;
     color: #DAD7CD;
 }
-.form-add-book > form > h3 {
+
+.header-esc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-esc > h3 {
     font-size: 36px;
     font-weight: 400;
+}
+
+#add-book-esc-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A5A40;
+    height: 36px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 0;
 }
 
 .input-item {
@@ -51,10 +83,22 @@ body {
 
 .form-add-book form input {
     background-color: #3A5A40;
+    color: #DAD7CD;
     font-size: 16px;
     border-radius: 8px;
     border: none;
     padding: 8px 12px;
+}
+
+.form-add-book form input:focus{
+    background-color: #3A5A40;
+    color: #DAD7CD;
+    outline: none;
+    border: none;
+}
+
+.form-add-book form input::placeholder{
+    color: #A3B18A;
 }
 
 .form-add-book form button {
@@ -77,6 +121,7 @@ body {
     flex-direction: column;
     width: 100%;
     border-radius: 16px;
+    gap: 16px;
 }
 
 .card {
@@ -105,10 +150,11 @@ font-size: 16px;
 
 .card-buttons {
  display: flex;
- gap: 4px;
+ gap: 8px;
 }
 
 .card-btn {
+    background-color: #344E41;
     color: #DAD7CD;
     padding: 8px 0;
     font-size: 16px;
@@ -117,10 +163,10 @@ font-size: 16px;
     border-radius: 8px;
 }
 
-#change-status {
+.change-status {
     background-color: #588157;
 }
 
-#remove-card {
+.remove-card {
     background-color: #3A5A40;
 }
